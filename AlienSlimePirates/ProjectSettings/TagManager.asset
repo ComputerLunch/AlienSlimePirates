@@ -11,6 +11,11 @@ TagManager:
   - Saucers
   - Torso
   - OtherSaucers
+  - FxTemporaire
+  - projectile
+  - TeleportIgnore
+  - ExcludeTeleport
+  - WeaponCollisionObject
   layers:
   - Default
   - TransparentFX
