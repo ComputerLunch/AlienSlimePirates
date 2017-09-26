@@ -125,7 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64dd13721ae4aa948acdf9bbe6f172e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particles: {fileID: 0}
+  particlesObject: {fileID: 1374612332721398, guid: 82936feec2e3b4f21b42a4618b162034,
+    type: 2}
   hitPoints: 100
 --- !u!135 &135055425341944832
 SphereCollider:
