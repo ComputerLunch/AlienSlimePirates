@@ -4,7 +4,10 @@
 
     public class ASP_Damageable : MonoBehaviour
     {
+
 		[SerializeField] 
+		private GameObject particlesObject;
+
 		private ParticleSystem particles;
 
 		[SerializeField]
@@ -22,7 +25,7 @@
 
 		private void Start()
 		{
-			particles = GetComponent<ParticleSystem>();
+			
 		}
 
         private void OnCollisionEnter(Collision collision)
@@ -52,10 +55,19 @@
         }
 		private void DestroySelf()
 		{
-			if (particles != null){
-				particles.Play();
+			if (particlesObject != null){
+				Instantiate(particlesObject, transform.position, transform.rotation);
+				//if (Physics.Raycast(transform.position, Vector3.down, 3)){
+					
+				//}
+
 			}
 			Destroy(gameObject);
 		}
+
+
+
+
+	
     }
 }
