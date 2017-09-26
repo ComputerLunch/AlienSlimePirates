@@ -16,6 +16,7 @@ TagManager:
   - TeleportIgnore
   - ExcludeTeleport
   - WeaponCollisionObject
+  - Core
   layers:
   - Default
   - TransparentFX
