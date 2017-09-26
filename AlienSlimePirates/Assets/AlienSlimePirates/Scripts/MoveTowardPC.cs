@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class MoveTowardPC : MonoBehaviour {
 
-	public Transform target;
+	public Transform targetCore;
+	public Transform targetPlayer;
+	public float playerDist;
 	public float speed;
 
 	void Start()
@@ -14,9 +16,20 @@ public class MoveTowardPC : MonoBehaviour {
 
 	void Update() {
 
-		target = GameObject.FindWithTag("Player").transform; 
-
 		float step = speed * Time.deltaTime;
-		transform.position = Vector3.MoveTowards(transform.position, target.position, step);
+
+		targetPlayer = GameObject.FindWithTag ("Player").transform; //position of player
+		targetCore = GameObject.FindWithTag ("Core").transform; //position of core
+
+		playerDist = Vector3.Distance (targetPlayer.position, transform.position);
+
+		print (playerDist);
+
+		if (playerDist < 2f) {
+			transform.position = Vector3.MoveTowards (transform.position, targetPlayer.position, step);
+			
+		} else {
+			transform.position = Vector3.MoveTowards (transform.position, targetCore.position, step);
+		}
 	}
 }
