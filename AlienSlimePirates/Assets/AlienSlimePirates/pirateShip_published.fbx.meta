@@ -1,0 +1,251 @@
+fileFormatVersion: 2
+guid: 0f237e35f0663634da22f64535731829
+timeCreated: 1506557686
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cabin
+    100002: Camera
+    100004: Crow_nest
+    100006: Directional Light
+    100008: GunRack_group
+    100010: gunRack_L
+    100012: gunRack_R
+    100014: Mast_group
+    100016: Mast_main
+    100018: Mast_rings
+    100020: Mast_top
+    100022: PirateShip
+    100024: //RootNode
+    100026: Plank_bottomBack_L
+    100028: Plank_bottomBack_R
+    100030: Plank_bottomFront_L
+    100032: Plank_bottomFront_R
+    100034: Plank_group
+    100036: Plank_top_L
+    100038: Plank_top_R
+    100040: sail_bottom_L
+    100042: sail_bottom_R
+    100044: sail_group
+    100046: sail_top_L
+    100048: sail_top_R
+    100050: Ship_center
+    100052: Ship_mid_L
+    100054: Ship_mid_R
+    100056: Ship_outer_L
+    100058: Ship_outer_R
+    100060: Ship_platforms
+    100062: Zipline_bottom_L
+    100064: Zipline_bottom_R
+    100066: Zipline_top_L
+    100068: Zipline_top_R
+    100070: Ziplines_group
+    100072: ZipPost_back_L
+    100074: ZipPost_back_R
+    100076: ZipPost_front_L
+    100078: ZipPost_front_R
+    100080: ZipPost_group
+    400000: Cabin
+    400002: Camera
+    400004: Crow_nest
+    400006: Directional Light
+    400008: GunRack_group
+    400010: gunRack_L
+    400012: gunRack_R
+    400014: Mast_group
+    400016: Mast_main
+    400018: Mast_rings
+    400020: Mast_top
+    400022: PirateShip
+    400024: //RootNode
+    400026: Plank_bottomBack_L
+    400028: Plank_bottomBack_R
+    400030: Plank_bottomFront_L
+    400032: Plank_bottomFront_R
+    400034: Plank_group
+    400036: Plank_top_L
+    400038: Plank_top_R
+    400040: sail_bottom_L
+    400042: sail_bottom_R
+    400044: sail_group
+    400046: sail_top_L
+    400048: sail_top_R
+    400050: Ship_center
+    400052: Ship_mid_L
+    400054: Ship_mid_R
+    400056: Ship_outer_L
+    400058: Ship_outer_R
+    400060: Ship_platforms
+    400062: Zipline_bottom_L
+    400064: Zipline_bottom_R
+    400066: Zipline_top_L
+    400068: Zipline_top_R
+    400070: Ziplines_group
+    400072: ZipPost_back_L
+    400074: ZipPost_back_R
+    400076: ZipPost_front_L
+    400078: ZipPost_front_R
+    400080: ZipPost_group
+    2300000: Cabin
+    2300002: Crow_nest
+    2300004: gunRack_L
+    2300006: gunRack_R
+    2300008: Mast_main
+    2300010: Mast_rings
+    2300012: Mast_top
+    2300014: Plank_bottomBack_L
+    2300016: Plank_bottomBack_R
+    2300018: Plank_bottomFront_L
+    2300020: Plank_bottomFront_R
+    2300022: Plank_top_L
+    2300024: Plank_top_R
+    2300026: sail_bottom_L
+    2300028: sail_bottom_R
+    2300030: sail_top_L
+    2300032: sail_top_R
+    2300034: Ship_center
+    2300036: Ship_mid_L
+    2300038: Ship_mid_R
+    2300040: Ship_outer_L
+    2300042: Ship_outer_R
+    2300044: Zipline_bottom_L
+    2300046: Zipline_bottom_R
+    2300048: Zipline_top_L
+    2300050: Zipline_top_R
+    2300052: ZipPost_back_L
+    2300054: ZipPost_back_R
+    2300056: ZipPost_front_L
+    2300058: ZipPost_front_R
+    3300000: Cabin
+    3300002: Crow_nest
+    3300004: gunRack_L
+    3300006: gunRack_R
+    3300008: Mast_main
+    3300010: Mast_rings
+    3300012: Mast_top
+    3300014: Plank_bottomBack_L
+    3300016: Plank_bottomBack_R
+    3300018: Plank_bottomFront_L
+    3300020: Plank_bottomFront_R
+    3300022: Plank_top_L
+    3300024: Plank_top_R
+    3300026: sail_bottom_L
+    3300028: sail_bottom_R
+    3300030: sail_top_L
+    3300032: sail_top_R
+    3300034: Ship_center
+    3300036: Ship_mid_L
+    3300038: Ship_mid_R
+    3300040: Ship_outer_L
+    3300042: Ship_outer_R
+    3300044: Zipline_bottom_L
+    3300046: Zipline_bottom_R
+    3300048: Zipline_top_L
+    3300050: Zipline_top_R
+    3300052: ZipPost_back_L
+    3300054: ZipPost_back_R
+    3300056: ZipPost_front_L
+    3300058: ZipPost_front_R
+    4300000: sail_top_R
+    4300002: sail_top_L
+    4300004: sail_bottom_R
+    4300006: sail_bottom_L
+    4300008: Crow_nest
+    4300010: Mast_top
+    4300012: Mast_main
+    4300014: Mast_rings
+    4300016: gunRack_R
+    4300018: gunRack_L
+    4300020: Ship_outer_R
+    4300022: Ship_mid_R
+    4300024: Ship_center
+    4300026: Ship_mid_L
+    4300028: Ship_outer_L
+    4300030: ZipPost_front_R
+    4300032: ZipPost_back_R
+    4300034: ZipPost_back_L
+    4300036: ZipPost_front_L
+    4300038: Zipline_bottom_R
+    4300040: Zipline_top_R
+    4300042: Zipline_top_L
+    4300044: Zipline_bottom_L
+    4300046: Plank_bottomFront_L
+    4300048: Plank_top_L
+    4300050: Plank_bottomBack_L
+    4300052: Plank_bottomBack_R
+    4300054: Plank_bottomFront_R
+    4300056: Plank_top_R
+    4300058: Cabin
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
