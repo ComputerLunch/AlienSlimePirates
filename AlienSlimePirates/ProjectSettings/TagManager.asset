@@ -17,12 +17,9 @@ TagManager:
   - ExcludeTeleport
   - WeaponCollisionObject
   - Core
-<<<<<<< HEAD
   - SF_Door
   - myPlayer
-=======
   - Enemy
->>>>>>> d8e6430ceaffe2faa2f7c000fa36fd03d696444a
   layers:
   - Default
   - TransparentFX
