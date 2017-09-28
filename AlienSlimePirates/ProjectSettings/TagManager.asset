@@ -17,6 +17,8 @@ TagManager:
   - ExcludeTeleport
   - WeaponCollisionObject
   - Core
+  - SF_Door
+  - myPlayer
   - Enemy
   layers:
   - Default
@@ -27,7 +29,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - roof
   - 
   - 
   - 
