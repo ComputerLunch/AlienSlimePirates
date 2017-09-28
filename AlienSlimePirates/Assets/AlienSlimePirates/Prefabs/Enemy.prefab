@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1148980470872574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.2025049, y: 0.5, z: -5.359964}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -125,8 +125,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64dd13721ae4aa948acdf9bbe6f172e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageMethod: 0
+  damageSource: 0
+  CheckForProximityDamageInterval: 1
   particlesObject: {fileID: 1374612332721398, guid: 82936feec2e3b4f21b42a4618b162034,
     type: 2}
+  VictoryPointValueWhenKilled: 50
   hitPoints: 100
 --- !u!135 &135055425341944832
 SphereCollider:
