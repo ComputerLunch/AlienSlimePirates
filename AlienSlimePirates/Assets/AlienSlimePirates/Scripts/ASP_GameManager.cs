@@ -104,7 +104,7 @@ public class ASP_GameManager : MonoBehaviour
         if (gameStatus == GameStatus.LevelinProgress)
         {
             currentScore += addToScore;
-			currentScoreText.text = currentScore.ToString();
+			//currentScoreText.text = currentScore.ToString();
         }
     }
 
