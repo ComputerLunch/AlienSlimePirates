@@ -25,7 +25,7 @@ public class MoveTowardPC : MonoBehaviour {
 
 		print (playerDist);
 
-		if (playerDist < 2f) {
+		if (playerDist < 5f) {
 			transform.position = Vector3.MoveTowards (transform.position, targetPlayer.position, step);
 			
 		} else {
