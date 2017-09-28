@@ -5,7 +5,7 @@
     public class HandLift : VRTK_InteractableObject
     {
         [Header("Hand Lift Options", order = 4)]
-        public float speed = 0.1f;
+        public float speed = 1f;
         public Transform handleTop;
         public Transform ropeTop;
         public Transform ropeBottom;
