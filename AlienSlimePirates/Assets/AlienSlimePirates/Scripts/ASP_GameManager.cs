@@ -35,6 +35,10 @@ public enum GameStatus
 public class ASP_GameManager : MonoBehaviour
 
 {
+    //Total enemies needing to be eliminated to finish level
+    private int totalEnemiesInLevel = 0;
+    //Total enemies eliminated towards satisgying level completion
+    private int totalEnemiesEliminated = 0;
     //what is currently the statsu of the application
     [SerializeField]
     private GameStatus gameStatus = GameStatus.undetermined;
@@ -49,17 +53,15 @@ public class ASP_GameManager : MonoBehaviour
     //high score out of  all round/levels played in current session
     [SerializeField]
     private int sessionHighScore = 0;
-
-	//UI field allowing output of current score
+    //UI field allowing output of current score
     [SerializeField]
     private Text currentScoreText;
-   // private bool currentLevelOver = false;
-	[SerializeField]
-	private List<ASP_ProximityDamage> ProximityDamageObjects;
-	[SerializeField]
-	private List<ASP_Damageable> ProximityDamageableObjects;
-
-	public static ASP_GameManager Instance { get; private set; }
+    // private bool currentLevelOver = false;
+    [SerializeField]
+    private List<ASP_ProximityDamage> ProximityDamageObjects;
+    [SerializeField]
+    private List<ASP_Damageable> ProximityDamageableObjects;
+    public static ASP_GameManager Instance { get; private set; }
 
     /* 
      //properties used for scene Loading
@@ -88,32 +90,46 @@ public class ASP_GameManager : MonoBehaviour
         }
     }
 
-	void OnEnable()
-	{
+    void OnEnable()
+    {
 
-		SceneManager.sceneLoaded += OnSceneLoaded;
-	}
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
 
-	void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-	{
-		ResetLevel();
-	}
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        ResetLevel();
+    }
 
     public void IncrementScore(int addToScore)
     {
         if (gameStatus == GameStatus.LevelinProgress)
         {
             currentScore += addToScore;
-			//currentScoreText.text = currentScore.ToString();
+            //currentScoreText.text = currentScore.ToString();
         }
     }
 
     public void GameOver()
     {
+        print("++++++++++++++++++++++++++++++GAME OVER+++++++++++++++++++++++++++++");
         gameStatus = GameStatus.postLevel;
     }
 
 
+    public void RegisterLevelEnemies(int newEnemies)
+    {
+        totalEnemiesInLevel += newEnemies;
+    }
+    public void RegisterEnemyDeath()
+    {
+        totalEnemiesEliminated++;
+        if (totalEnemiesEliminated >= totalEnemiesInLevel)
+        {
+            GameOver();
+
+        }
+    }
     public void GameBegin()
     {
         gameStatus = GameStatus.LevelinProgress;
@@ -121,43 +137,44 @@ public class ASP_GameManager : MonoBehaviour
 
 
 
-	public void RegisterNewProximityDamageObject(ASP_ProximityDamage newObject)
-	{
-		ProximityDamageObjects.Add(newObject);
-	}
+    public void RegisterNewProximityDamageObject(ASP_ProximityDamage newObject)
+    {
+        ProximityDamageObjects.Add(newObject);
+    }
 
 
-	public void RegisterNewProximityDamagableObject(ASP_Damageable newObject)
-	{
-		ProximityDamageableObjects.Add(newObject);
-	}
+    public void RegisterNewProximityDamagableObject(ASP_Damageable newObject)
+    {
+        ProximityDamageableObjects.Add(newObject);
+    }
 
 
 
-	public void UnRegisterNewProximityDamageObject(ASP_ProximityDamage removeObject)
-	{
-		
-			ProximityDamageObjects.Remove(removeObject);
+    public void UnRegisterNewProximityDamageObject(ASP_ProximityDamage removeObject)
+    {
 
-	}
+        ProximityDamageObjects.Remove(removeObject);
+
+    }
 
 
-	public void UnRegisterNewProximityDamagableObject(ASP_Damageable removeObject)
-	{
-		
-			ProximityDamageableObjects.Remove(removeObject);
+    public void UnRegisterNewProximityDamagableObject(ASP_Damageable removeObject)
+    {
 
-	}
+        ProximityDamageableObjects.Remove(removeObject);
 
-	public ASP_ProximityDamage[] GetProximityDamageObjects(){
-		return ProximityDamageObjects.ToArray ();
-	}
+    }
 
-	private void ResetLevel()
-	{
-		ProximityDamageObjects = new List<ASP_ProximityDamage> ();
-		ProximityDamageableObjects = new List<ASP_Damageable> ();
-	}
+    public ASP_ProximityDamage[] GetProximityDamageObjects()
+    {
+        return ProximityDamageObjects.ToArray();
+    }
+
+    private void ResetLevel()
+    {
+        ProximityDamageObjects = new List<ASP_ProximityDamage>();
+        ProximityDamageableObjects = new List<ASP_Damageable>();
+    }
 
 
 
@@ -204,7 +221,7 @@ public class ASP_GameManager : MonoBehaviour
     }
 
 
-        
+
 
     void StartNewLoad()
     {
@@ -283,6 +300,6 @@ public class ASP_GameManager : MonoBehaviour
         }
 
     }
-	*/
+    */
 
 }

@@ -119,6 +119,9 @@ public class ASP_Damageable : MonoBehaviour
         {
             DestroySelf();
         }
+        if (gameObject.CompareTag("Enemy")){
+            ASP_GameManager.Instance.RegisterEnemyDeath();
+        }
     }
     protected void DestroySelf()
     {
@@ -135,7 +138,10 @@ public class ASP_Damageable : MonoBehaviour
         Destroy(gameObject);
     }
 
-
+    public void AutoDamage(int damage)
+    {
+        CauseDamage( damage);
+    }
 
 
 
