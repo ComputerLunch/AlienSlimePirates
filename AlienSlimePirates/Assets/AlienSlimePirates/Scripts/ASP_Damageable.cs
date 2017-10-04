@@ -42,7 +42,7 @@ public class ASP_Damageable : MonoBehaviour
     // Use this for initialization
     protected int damageReceived = 0;
 
-
+ 
     public int HitPoints
     {
         get
@@ -90,19 +90,15 @@ public class ASP_Damageable : MonoBehaviour
     // check to see if objects causing proximity damage are nearby
     protected void CheckForProximityDamage()
     {
-
         ASP_ProximityDamage[] proximityDamageObjects = ASP_GameManager.Instance.GetProximityDamageObjects();
         for (int i = 0; i < proximityDamageObjects.Length; i++)
         {
             // See if this object can be damaged by this source, i.e. enemys cant damage each other through proximity
             if (damageSource == DamageSourceTag.Everything || proximityDamageObjects[i].gameObject.CompareTag(damageSource.ToString()))
             {
-
                 if (CheckProximity(proximityDamageObjects[i]))
                 {
                     CauseDamage(proximityDamageObjects[i].DamageInflicted);
-
-                    print("Proximity Damage Detected");
                 }
             }
         }
@@ -119,7 +115,8 @@ public class ASP_Damageable : MonoBehaviour
         {
             DestroySelf();
         }
-        if (gameObject.CompareTag("Enemy")){
+        if (gameObject.CompareTag("Enemy"))
+        {
             ASP_GameManager.Instance.RegisterEnemyDeath();
         }
     }
@@ -133,14 +130,23 @@ public class ASP_Damageable : MonoBehaviour
             //}
 
         }
-        ASP_GameManager.Instance.IncrementScore(VictoryPointValueWhenKilled);
-        ASP_GameManager.Instance.UnRegisterNewProximityDamagableObject(this);
-        Destroy(gameObject);
+        if (gameObject.CompareTag("Enemy"))
+        {
+            ASP_GameManager.Instance.IncrementScore(VictoryPointValueWhenKilled);
+            ASP_GameManager.Instance.UnRegisterNewProximityDamagableObject(this);
+            Destroy(gameObject);
+        }
+        else if (gameObject.CompareTag("Player"))
+        {
+            ASP_GameManager.Instance.GameOver(GameResult.PlayerLossDeath);
+        }
+
     }
+
 
     public void AutoDamage(int damage)
     {
-        CauseDamage( damage);
+        CauseDamage(damage);
     }
 
 

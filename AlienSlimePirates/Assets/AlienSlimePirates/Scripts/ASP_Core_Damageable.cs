@@ -14,6 +14,9 @@ public class ASP_Core_Damageable : ASP_Damageable
     [SerializeField]
 
     private ASP_ParticleAnimator coreParticles;
+    [SerializeField]
+
+    private int VictoryPointPenaltyWhenDamaged = 1;
     protected override void Start()
     {
         //call base method of ASP_Core_Damageable
@@ -25,13 +28,14 @@ public class ASP_Core_Damageable : ASP_Damageable
     protected override void CauseDamage(int damage)
     {
         damageReceived += damage;
+        ASP_GameManager.Instance.IncrementScore(-damage * VictoryPointPenaltyWhenDamaged );
         if (damageReceived >= hitPoints)
         {
             //destroyed
             innerCylinder.UpdateValue(0);
             damagePercentText.UpdatePercent(0);
             coreParticles.UpdateValue(0);
-            ASP_GameManager.Instance.GameOver();
+            ASP_GameManager.Instance.GameOver(GameResult.PlayerLossCore);
         }
         else
         {
