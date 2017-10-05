@@ -15,7 +15,7 @@ public class ASP_Damageable : MonoBehaviour
 
     protected enum DamageSourceTag
     {
-        Player,
+        WeaponCollisionObject,
         Enemy,
         Everything
     }
@@ -64,20 +64,21 @@ public class ASP_Damageable : MonoBehaviour
 
     protected void OnCollisionEnter(Collision coll)
     {
-
-        //all damage inflicting things that can activaet damage via collider need three things:
-        // 1. A matching  Tag foir the correct damage source (or an Everything DamageSourceTag
+		//if (CompareTag())
+        //all damage inflicting things that can activate damage via collider need three things:
+		// 1. A matching  Tag foir the correct damage source (or an Everything DamageSourceTag)
         // 2. A damagedByCollision or damagedByProximityAndCollision damageMethod
         // 3. an attached ASP_WeaponDamage script
-
+		print ("DAMAGE!!!!! "+ coll.gameObject.tag + ", " + coll.gameObject.name);
 
         if ((damageSource == DamageSourceTag.Everything || coll.gameObject.CompareTag(damageSource.ToString())) && (damageMethod == DamageMethod.damagedByCollision || damageMethod == DamageMethod.damagedByProximityAndCollision))
         {
-            //all damage inflicting objects shoudl have an ASP_WeaponDamage script
+            //all damage inflicting objects should have an ASP_WeaponDamage script
             ASP_WeaponDamage damageScript = coll.gameObject.GetComponent<ASP_WeaponDamage>();
-
+			print ("damageScript!!!!! " + damageScript );
             if (damageScript != null)
             {
+				
                 CauseDamage(damageScript.DamageInflicted);
             }
             else
@@ -109,17 +110,17 @@ public class ASP_Damageable : MonoBehaviour
 
     }
     protected virtual void CauseDamage(int damage)
-    {
+	{
         damageReceived += damage;
-        if (damageReceived >= hitPoints)
-        {
-            DestroySelf();
-        }
-        if (gameObject.CompareTag("Enemy"))
-        {
-            ASP_GameManager.Instance.RegisterEnemyDeath();
-        }
-    }
+
+		print ("damageReceived " + damageReceived);
+		if (damageReceived >= hitPoints) {
+			DestroySelf ();
+		}
+	}
+
+
+
     protected void DestroySelf()
     {
         if (particlesObject != null)
@@ -134,6 +135,7 @@ public class ASP_Damageable : MonoBehaviour
         {
             ASP_GameManager.Instance.IncrementScore(VictoryPointValueWhenKilled);
             ASP_GameManager.Instance.UnRegisterNewProximityDamagableObject(this);
+			ASP_GameManager.Instance.RegisterEnemyDeath();
             Destroy(gameObject);
         }
         else if (gameObject.CompareTag("Player"))
