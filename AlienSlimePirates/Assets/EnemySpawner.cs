@@ -21,7 +21,7 @@ public class EnemySpawner : MonoBehaviour {
 		if (enemyCount < maxEnemy) {
 			Instantiate (enemySlime, gameObject.transform.position, Quaternion.identity);
 			enemyCount++;
-			Invoke ("SpawnEnemy", Random.Range(1f,5f));
+			Invoke ("SpawnEnemy", Random.Range(5f,15f));
 		}
 	}
 
