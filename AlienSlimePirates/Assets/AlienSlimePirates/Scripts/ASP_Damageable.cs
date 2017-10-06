@@ -80,7 +80,11 @@ public class ASP_Damageable : MonoBehaviour
 		// 1. A matching  Tag for the correct damage source (or an Everything DamageSourceTag)
 		// 2. A damagedByCollision or damagedByProximityAndCollision damageMethod
 		// 3. an attached ASP_WeaponDamage script
-		print("DAMAGE!!!!! " + coll.gameObject.tag + ", " + coll.gameObject.name);
+		//print("DAMAGE!!!!! " + coll.gameObject.tag + ", " + coll.gameObject.name);
+
+		if (gameObject.name == "[VRTK][AUTOGEN][BodyColliderContainer]") {
+			print ("Collision!!" + coll.gameObject.name);
+		}
 
 		if ((damageSource == DamageSourceTag.Everything || coll.gameObject.CompareTag(damageSource.ToString())) && (damageMethod == DamageMethod.damagedByCollision || damageMethod == DamageMethod.damagedByProximityAndCollision))
 		{

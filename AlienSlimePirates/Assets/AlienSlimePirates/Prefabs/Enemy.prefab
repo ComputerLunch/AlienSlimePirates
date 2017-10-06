@@ -44,6 +44,8 @@ GameObject:
   - component: {fileID: 114340754367091106}
   - component: {fileID: 65517788059089176}
   - component: {fileID: 195174129552026224}
+  - component: {fileID: 114856001117717204}
+  - component: {fileID: 114858576383157626}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -301,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageRadius: 1.5
-  damageInflicted: 20
+  damageInflicted: 1
   showDamageGizmo: 1
 --- !u!114 &114507270088078522
 MonoBehaviour:
@@ -318,6 +320,31 @@ MonoBehaviour:
   targetPlayer: {fileID: 0}
   playerDist: 0
   speed: 1
+--- !u!114 &114856001117717204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1148980470872574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12908695364124849b9f69e9ef059e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageInflicted: 20
+--- !u!114 &114858576383157626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1148980470872574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0dfc9b99483ae4383c92fd818147f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minYAllowable: -5
+  damageAmount: 1000
 --- !u!114 &114878502913461316
 MonoBehaviour:
   m_ObjectHideFlags: 1
