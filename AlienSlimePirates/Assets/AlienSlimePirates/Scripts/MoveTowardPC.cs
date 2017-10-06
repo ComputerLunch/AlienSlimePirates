@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class MoveTowardPC : MonoBehaviour {
 
@@ -9,9 +10,11 @@ public class MoveTowardPC : MonoBehaviour {
 	public float playerDist;
 	public float speed;
 
+	private NavMeshAgent agent;
+
 	void Start()
 	{
-
+		agent = gameObject.GetComponent<NavMeshAgent> ();
 	}
 
 	void Update() {
@@ -23,11 +26,13 @@ public class MoveTowardPC : MonoBehaviour {
 
 		playerDist = Vector3.Distance (targetPlayer.position, transform.position);
 
-		if (playerDist < 0.1f) {
-			transform.position = Vector3.MoveTowards (transform.position, targetPlayer.position, step);
+		if (playerDist < 10f) {
+			agent.SetDestination (targetPlayer.position);
+			//transform.position = Vector3.MoveTowards (transform.position, targetPlayer.position, step);
 			
 		} else {
-			transform.position = Vector3.MoveTowards (transform.position, targetCore.position, step);
+			agent.SetDestination (targetCore.position);
+			//transform.position = Vector3.MoveTowards (transform.position, targetCore.position, step);
 		}
 	}
 }
