@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 114878502913461316}
   - component: {fileID: 114340754367091106}
   - component: {fileID: 65517788059089176}
+  - component: {fileID: 195174129552026224}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -330,11 +331,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageMethod: 0
   damageSource: 0
-  CheckForProximityDamageInterval: 1
+  proximityDamageInterval: 1
+  victoryPointValueWhenKilled: 50
+  hitPoints: 100
   particlesObject: {fileID: 1374612332721398, guid: 82936feec2e3b4f21b42a4618b162034,
     type: 2}
-  VictoryPointValueWhenKilled: 50
-  hitPoints: 100
 --- !u!137 &137554847771652482
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -384,3 +385,24 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.5631244, y: 1.5137516, z: -0.34948993}
     m_Extent: {x: 3.5960467, y: 1.8474711, z: 3.7840421}
   m_DirtyAABB: 0
+--- !u!195 &195174129552026224
+NavMeshAgent:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1148980470872574}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
