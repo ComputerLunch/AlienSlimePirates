@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.022833612, g: 0.011246646, b: 0.040416896, a: 1}
+  m_IndirectSpecularColor: {r: 0.022842664, g: 0.011234282, b: 0.040441006, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -5698,7 +5698,7 @@ Prefab:
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 808
+      value: 570
       objectReference: {fileID: 0}
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
@@ -11700,12 +11700,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e17fa3104372842a6a03bd987e10513c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageMethod: 2
+  damageMethod: 0
   damageSource: 1
   proximityDamageInterval: 1
   victoryPointValueWhenKilled: 0
-  hitPoints: 1000
+  hitPoints: 10
   particlesObject: {fileID: 0}
+  adjustCollider: 0
+  colliderRadius: 1
 --- !u!1 &1021841520
 GameObject:
   m_ObjectHideFlags: 0
@@ -14332,6 +14334,16 @@ Prefab:
         type: 2}
       propertyPath: hitPoints
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 114679516985934718, guid: 8264d350080b0e04dbc1d754eb69c5b0,
+        type: 2}
+      propertyPath: damageMethod
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114679516985934718, guid: 8264d350080b0e04dbc1d754eb69c5b0,
+        type: 2}
+      propertyPath: damageSource
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8264d350080b0e04dbc1d754eb69c5b0, type: 2}

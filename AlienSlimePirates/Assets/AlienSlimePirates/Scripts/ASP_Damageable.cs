@@ -75,14 +75,9 @@ public class ASP_Damageable : MonoBehaviour
 
 	protected void OnCollisionEnter(Collision coll)
 	{
-		//if (CompareTag())
-		//all damage inflicting things that can activate damage via collider need three things:
-		// 1. A matching  Tag for the correct damage source (or an Everything DamageSourceTag)
-		// 2. A damagedByCollision or damagedByProximityAndCollision damageMethod
-		// 3. an attached ASP_WeaponDamage script
-		//print("DAMAGE!!!!! " + coll.gameObject.tag + ", " + coll.gameObject.name);
 
-		if (gameObject.name == "[VRTK][AUTOGEN][BodyColliderContainer]") {
+		print ("OnCollisionEnter, This:" + gameObject.name + " collided with that: " + coll.gameObject.name);
+		if (gameObject.name == "[CameraRig]") {
 			print ("Collision!!" + coll.gameObject.name);
 		}
 
@@ -128,7 +123,7 @@ public class ASP_Damageable : MonoBehaviour
 	{
 		damageReceived += damage;
 
-		print("damageReceived " + damageReceived);
+		print("damageReceived by " + gameObject.name + ", "+ damageReceived);
 		if (damageReceived >= hitPoints)
 		{
 			DestroySelf();
