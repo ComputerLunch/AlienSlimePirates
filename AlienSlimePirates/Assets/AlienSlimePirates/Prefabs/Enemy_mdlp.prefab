@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114878502913461316}
   - component: {fileID: 114340754367091106}
   - component: {fileID: 114821822857637810}
+  - component: {fileID: 114555782390369682}
   m_Layer: 0
   m_Name: Enemy_mdlp
   m_TagString: Enemy
@@ -130,6 +131,18 @@ MonoBehaviour:
   targetPlayer: {fileID: 0}
   playerDist: 0
   speed: 1
+--- !u!114 &114555782390369682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1148980470872574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12908695364124849b9f69e9ef059e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageInflicted: 20
 --- !u!114 &114821822857637810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,11 +169,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageMethod: 0
   damageSource: 0
-  CheckForProximityDamageInterval: 1
+  proximityDamageInterval: 1
+  victoryPointValueWhenKilled: 50
+  hitPoints: 100
   particlesObject: {fileID: 1374612332721398, guid: 82936feec2e3b4f21b42a4618b162034,
     type: 2}
-  VictoryPointValueWhenKilled: 50
-  hitPoints: 100
 --- !u!135 &135055425341944832
 SphereCollider:
   m_ObjectHideFlags: 1
