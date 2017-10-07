@@ -136,6 +136,12 @@ public class ASP_GameManager : MonoBehaviour
     }
 
 
+
+	public void PlayerDamaged(float damagePercent)
+	{
+		print ("PlayerDamaged " + damagePercent);
+		gameHUD.PlayerDamaged(damagePercent);
+	}
     public void RegisterLevelEnemies(int newEnemies)
     {
         totalEnemiesInLevel += newEnemies;

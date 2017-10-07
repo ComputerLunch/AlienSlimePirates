@@ -24,11 +24,6 @@ public class ASP_AddDamageableScript : MonoBehaviour
     protected GameObject particlesObject;
 
 
-	[SerializeField]
-	protected bool adjustCollider = false;
-	// Use this for initialization
-	[SerializeField]
-	protected float colliderRadius = 1;
 
     GameObject VRTK_PlayerBody;
     // Use this for initialization
@@ -44,13 +39,6 @@ public class ASP_AddDamageableScript : MonoBehaviour
             {
                 ASP_Damageable newScript = VRTK_PlayerBody.transform.parent.gameObject.AddComponent(typeof(ASP_Damageable)) as ASP_Damageable;
                 newScript.Setup(damageMethod, damageSource, hitPoints, proximityDamageInterval, victoryPointValueWhenKilled, particlesObject);
-	/*
-				if (adjustCollider) {
-					CapsuleCollider coll = VRTK_PlayerBody.GetComponent<CapsuleCollider>();
-					coll.radius = colliderRadius;
-					this.enabled = false;
-				}
-				*/
             }
         }
     }

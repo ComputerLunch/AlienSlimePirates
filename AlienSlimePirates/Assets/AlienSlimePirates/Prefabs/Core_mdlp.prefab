@@ -305,7 +305,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1794707797269408}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.0917177, y: 0.694, z: 1.066684}
+  m_LocalPosition: {x: -9.6, y: 0.694, z: 1.066684}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4364361420121350}
@@ -626,13 +626,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageMethod: 2
   damageSource: 1
-  CheckForProximityDamageInterval: 1
-  particlesObject: {fileID: 0}
-  VictoryPointValueWhenKilled: 50
+  proximityDamageInterval: 1
+  victoryPointValueWhenKilled: 50
   hitPoints: 100
+  particlesObject: {fileID: 0}
   damagePercentText: {fileID: 114574046715102830}
   innerCylinder: {fileID: 114473908704754192}
   coreParticles: {fileID: 114493495348160222}
+  VictoryPointPenaltyWhenDamaged: 1
 --- !u!114 &114721532825342306
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -736,7 +737,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1641363937
+  randomSeed: -1479232199
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3868,7 +3869,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -497699184
+  randomSeed: -1685921955
   InitialModule:
     serializedVersion: 3
     enabled: 1

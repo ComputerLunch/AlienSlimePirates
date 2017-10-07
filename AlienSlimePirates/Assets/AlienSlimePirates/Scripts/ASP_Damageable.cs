@@ -76,16 +76,16 @@ public class ASP_Damageable : MonoBehaviour
 	protected void OnCollisionEnter(Collision coll)
 	{
 
-		print ("OnCollisionEnter, This:" + gameObject.name + " collided with that: " + coll.gameObject.name);
+		//print ("OnCollisionEnter, This:" + gameObject.name + " collided with that: " + coll.gameObject.name);
 		if (gameObject.name == "[CameraRig]") {
-			print ("Collision!!" + coll.gameObject.name);
+			//print ("Collision!!" + coll.gameObject.name);
 		}
 
 		if ((damageSource == DamageSourceTag.Everything || coll.gameObject.CompareTag(damageSource.ToString())) && (damageMethod == DamageMethod.damagedByCollision || damageMethod == DamageMethod.damagedByProximityAndCollision))
 		{
 			//all damage inflicting objects should have an ASP_WeaponDamage script
 			ASP_WeaponDamage damageScript = coll.gameObject.GetComponent<ASP_WeaponDamage>();
-			print("damageScript!!!!! " + damageScript);
+	
 			if (damageScript != null)
 			{
 
@@ -104,13 +104,14 @@ public class ASP_Damageable : MonoBehaviour
 		ASP_ProximityDamage[] proximityDamageObjects = ASP_GameManager.Instance.GetProximityDamageObjects();
 		for (int i = 0; i < proximityDamageObjects.Length; i++)
 		{
-			// See if this object can be damaged by this source, i.e. enemys cant damage each other through proximity
+			// See if this object can be damaged by this source, i.e. enemys can't damage each other through proximity
 			if (damageSource == DamageSourceTag.Everything || proximityDamageObjects[i].gameObject.CompareTag(damageSource.ToString()))
 			{
-				if (CheckProximity(proximityDamageObjects[i]))
-				{
-					CauseDamage(proximityDamageObjects[i].DamageInflicted);
-				}
+				if (CheckProximity (proximityDamageObjects [i])) {
+					CauseDamage (proximityDamageObjects [i].DamageInflicted);
+				} 
+
+
 			}
 		}
 	}
@@ -122,8 +123,13 @@ public class ASP_Damageable : MonoBehaviour
 	protected virtual void CauseDamage(int damage)
 	{
 		damageReceived += damage;
+		//if player notify gameManager so it can update HUD
+		if (gameObject.CompareTag ("Player")) {
 
-		print("damageReceived by " + gameObject.name + ", "+ damageReceived);
+
+			ASP_GameManager.Instance.PlayerDamaged ((float)damageReceived/(float)hitPoints);
+		}
+		//print("damageReceived by " + gameObject.name + ", "+ damageReceived);
 		if (damageReceived >= hitPoints)
 		{
 			DestroySelf();
