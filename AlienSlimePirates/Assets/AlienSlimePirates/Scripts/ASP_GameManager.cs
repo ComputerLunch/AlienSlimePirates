@@ -64,6 +64,9 @@ public class ASP_GameManager : MonoBehaviour
     //UI field allowing output of current score
     [SerializeField]
     private ASP_Game_HUD gameHUD;
+
+	[SerializeField]
+	private ASP_Player_HUD playerHUD;
     // private bool currentLevelOver = false;
     [SerializeField]
     private List<ASP_ProximityDamage> ProximityDamageObjects;
@@ -136,11 +139,15 @@ public class ASP_GameManager : MonoBehaviour
     }
 
 
-
+	public void CoreDamaged(float damagePercent)
+	{
+		//print ("PlayerDamaged " + damagePercent);
+		playerHUD.CoreDamaged(damagePercent);
+	}
 	public void PlayerDamaged(float damagePercent)
 	{
-		print ("PlayerDamaged " + damagePercent);
-		gameHUD.PlayerDamaged(damagePercent);
+		//print ("PlayerDamaged " + damagePercent);
+		playerHUD.PlayerDamaged(damagePercent);
 	}
     public void RegisterLevelEnemies(int newEnemies)
     {
