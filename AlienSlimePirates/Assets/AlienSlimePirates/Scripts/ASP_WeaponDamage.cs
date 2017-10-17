@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ASP_WeaponDamage : MonoBehaviour {
 
+	public AudioClip damageSoundEffect;
 
 	[SerializeField]
 	private int damageInflicted = 10;
@@ -13,6 +14,13 @@ public class ASP_WeaponDamage : MonoBehaviour {
 	{
 		get
 		{
+			if (damageSoundEffect) {
+				AudioSource audios = gameObject.GetComponent<AudioSource> ();
+				if (audios) {
+					audios.clip = damageSoundEffect;
+					audios.Play ();
+				}
+			}
 			return damageInflicted;
 		}
 	}
