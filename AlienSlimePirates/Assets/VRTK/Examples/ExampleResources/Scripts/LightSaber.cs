@@ -14,6 +14,8 @@
         private Color targetColor;
         private Color[] bladePhaseColors;
 
+		public AudioClip openSaberEffect;
+
         public override void StartUsing(VRTK_InteractUse usingObject)
         {
             base.StartUsing(usingObject);
@@ -21,7 +23,18 @@
             bladePhaseColors = new Color[2] { Color.blue, Color.cyan };
             activeColor = bladePhaseColors[0];
             targetColor = bladePhaseColors[1];
+			LightSaberOn ();
         }
+
+		void LightSaberOn () {
+			if (openSaberEffect) {
+				AudioSource audios = gameObject.GetComponent<AudioSource> ();
+				if (audios) {
+					audios.clip = openSaberEffect;
+					audios.Play ();
+				}
+			}
+		}
 
         public override void StopUsing(VRTK_InteractUse usingObject)
         {
