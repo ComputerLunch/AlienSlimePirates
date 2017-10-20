@@ -1629,7 +1629,6 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
-  openSaberEffect: {fileID: 0}
 --- !u!54 &115316040
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1668,7 +1667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12908695364124849b9f69e9ef059e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageSoundEffect: {fileID: 0}
   damageInflicted: 25
 --- !u!1 &128582792
 GameObject:
@@ -1849,7 +1847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12908695364124849b9f69e9ef059e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageSoundEffect: {fileID: 0}
   damageInflicted: 20
 --- !u!1 &133676918
 GameObject:
@@ -2967,7 +2964,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12908695364124849b9f69e9ef059e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageSoundEffect: {fileID: 0}
   damageInflicted: 25
 --- !u!1001 &250897680
 Prefab:
@@ -5128,7 +5124,7 @@ Prefab:
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1153
+      value: 1155
       objectReference: {fileID: 0}
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
@@ -14760,7 +14756,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12908695364124849b9f69e9ef059e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageSoundEffect: {fileID: 0}
   damageInflicted: 25
 --- !u!1 &1100818247
 GameObject:
@@ -16723,7 +16718,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12908695364124849b9f69e9ef059e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageSoundEffect: {fileID: 0}
   damageInflicted: 10
 --- !u!1 &1239523030
 GameObject:
