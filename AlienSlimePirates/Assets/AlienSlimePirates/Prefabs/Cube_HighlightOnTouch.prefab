@@ -16,23 +16,23 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 4691056123242992}
-  - component: {fileID: 33102713284687016}
-  - component: {fileID: 23379893729197442}
-  - component: {fileID: 65441218551919056}
-  - component: {fileID: 54069866451456578}
-  - component: {fileID: 114808471942874582}
-  - component: {fileID: 114213535812677302}
-  - component: {fileID: 114721075732158430}
+  - 4: {fileID: 4691056123242992}
+  - 33: {fileID: 33102713284687016}
+  - 23: {fileID: 23379893729197442}
+  - 65: {fileID: 65441218551919056}
+  - 54: {fileID: 54069866451456578}
+  - 114: {fileID: 114808471942874582}
+  - 114: {fileID: 114213535812677302}
+  - 114: {fileID: 114721075732158430}
   m_Layer: 0
   m_Name: Cube_HighlightOnTouch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4691056123242992
 Transform:
   m_ObjectHideFlags: 1
@@ -55,14 +55,11 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 33af27359b49eda48829e2c0bf1e12b8, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
+  m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -70,13 +67,11 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33102713284687016
 MeshFilter:
@@ -163,8 +158,8 @@ MonoBehaviour:
   validDrop: 1
   grabOverrideButton: 0
   allowedGrabControllers: 0
-  grabAttachMechanicScript: {fileID: 114213535812677302}
-  secondaryGrabActionScript: {fileID: 114721075732158430}
+  grabAttachMechanicScript: {fileID: 0}
+  secondaryGrabActionScript: {fileID: 0}
   isUsable: 0
   holdButtonToUse: 1
   useOnlyIfGrabbed: 0

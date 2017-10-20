@@ -16,173 +16,173 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 224431427871901746}
-  - component: {fileID: 222268900362579196}
-  - component: {fileID: 114933367624701310}
+  - 224: {fileID: 224431427871901746}
+  - 222: {fileID: 222268900362579196}
+  - 114: {fileID: 114933367624701310}
   m_Layer: 5
-  m_Name: FinalScore Output
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1265429865831770
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 224817241920868090}
-  - component: {fileID: 222692756895074452}
-  - component: {fileID: 114927149837214180}
+  - 224: {fileID: 224817241920868090}
+  - 222: {fileID: 222692756895074452}
+  - 114: {fileID: 114927149837214180}
   m_Layer: 5
-  m_Name: Current Score Label
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1290959266505810
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 224288863220266206}
-  - component: {fileID: 222797842572315250}
-  - component: {fileID: 114184472865487692}
+  - 224: {fileID: 224288863220266206}
+  - 222: {fileID: 222797842572315250}
+  - 114: {fileID: 114184472865487692}
   m_Layer: 5
-  m_Name: DEFEAT
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1408466982699162
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 224604206043618064}
-  - component: {fileID: 223416006795861212}
-  - component: {fileID: 114028143319741998}
-  - component: {fileID: 114132249594615890}
-  - component: {fileID: 114933148684631472}
+  - 224: {fileID: 224604206043618064}
+  - 223: {fileID: 223416006795861212}
+  - 114: {fileID: 114028143319741998}
+  - 114: {fileID: 114132249594615890}
+  - 114: {fileID: 114933148684631472}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1510978972990794
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 224753674756161870}
-  - component: {fileID: 222972586285493008}
-  - component: {fileID: 114003522125984440}
+  - 224: {fileID: 224753674756161870}
+  - 222: {fileID: 222972586285493008}
+  - 114: {fileID: 114003522125984440}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1633585551940222
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 224861954178543138}
-  - component: {fileID: 222096072489710162}
-  - component: {fileID: 114934600727267216}
+  - 224: {fileID: 224861954178543138}
+  - 222: {fileID: 222096072489710162}
+  - 114: {fileID: 114934600727267216}
   m_Layer: 5
-  m_Name: GameResult
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1647317012022606
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 224587628514164594}
-  - component: {fileID: 222862861665762502}
-  - component: {fileID: 114100147186121848}
+  - 224: {fileID: 224587628514164594}
+  - 222: {fileID: 222862861665762502}
+  - 114: {fileID: 114100147186121848}
   m_Layer: 5
-  m_Name: FinalScore Label
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1850462537995582
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 224537901086992420}
-  - component: {fileID: 222576384474742750}
-  - component: {fileID: 114297064599289568}
+  - 224: {fileID: 224537901086992420}
+  - 222: {fileID: 222576384474742750}
+  - 114: {fileID: 114297064599289568}
   m_Layer: 5
-  m_Name: Current Score Output
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1865091266839274
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 224813741105404590}
-  - component: {fileID: 222984746635348242}
-  - component: {fileID: 114633745036620388}
+  - 224: {fileID: 224813741105404590}
+  - 222: {fileID: 222984746635348242}
+  - 114: {fileID: 114633745036620388}
   m_Layer: 5
-  m_Name: GAME OVER
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1956203946958340
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 224305743589558534}
-  - component: {fileID: 222190018301849600}
-  - component: {fileID: 114708292643451110}
+  - 224: {fileID: 224305743589558534}
+  - 222: {fileID: 222190018301849600}
+  - 114: {fileID: 114708292643451110}
   m_Layer: 5
-  m_Name: VICTORY
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &114003522125984440
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -202,7 +202,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -251,7 +251,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 99
     m_FontStyle: 1
     m_BestFit: 0
@@ -300,7 +300,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 202
     m_FontStyle: 3
     m_BestFit: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -366,7 +366,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 99
     m_FontStyle: 1
     m_BestFit: 0
@@ -399,7 +399,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 202
     m_FontStyle: 3
     m_BestFit: 1
@@ -432,7 +432,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -456,14 +456,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 728cb69b2f1c8854bb426f240badc847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentScoreLabel: {fileID: 114927149837214180}
-  currentScoreOutput: {fileID: 114297064599289568}
-  gameOver: {fileID: 114633745036620388}
-  victory: {fileID: 114708292643451110}
-  defeat: {fileID: 114184472865487692}
-  gameResult: {fileID: 114934600727267216}
-  FinalScoreLabel: {fileID: 114100147186121848}
-  FinalScoreOutput: {fileID: 114933367624701310}
+  currentScoreLabel: {fileID: 0}
+  currentScoreOutput: {fileID: 0}
+  gameOver: {fileID: 0}
+  victory: {fileID: 0}
+  defeat: {fileID: 17310}
+  gameResult: {fileID: 0}
+  FinalScoreLabel: {fileID: 0}
+  FinalScoreOutput: {fileID: 0}
 --- !u!114 &114933367624701310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -484,7 +484,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 99
     m_FontStyle: 1
     m_BestFit: 0
@@ -517,7 +517,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 3}
     m_FontSize: 99
     m_FontStyle: 1
     m_BestFit: 0
@@ -593,7 +593,7 @@ Canvas:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1408466982699162}
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
@@ -602,7 +602,6 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0

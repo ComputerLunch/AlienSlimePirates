@@ -16,13 +16,13 @@ GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 4818406529254796}
-  - component: {fileID: 33119180446581130}
-  - component: {fileID: 23699541080825880}
+  - 4: {fileID: 4818406529254796}
+  - 33: {fileID: 33119180446581130}
+  - 23: {fileID: 23699541080825880}
   m_Layer: 0
-  m_Name: eyepatch
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,73 +33,73 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 4460231483627884}
-  - component: {fileID: 33757693296376740}
-  - component: {fileID: 23853726948509716}
-  - component: {fileID: 54262383486177004}
-  - component: {fileID: 114507270088078522}
-  - component: {fileID: 114878502913461316}
-  - component: {fileID: 114340754367091106}
-  - component: {fileID: 65517788059089176}
-  - component: {fileID: 195174129552026224}
-  - component: {fileID: 114856001117717204}
-  - component: {fileID: 114858576383157626}
+  - 4: {fileID: 4460231483627884}
+  - 33: {fileID: 33757693296376740}
+  - 23: {fileID: 23853726948509716}
+  - 54: {fileID: 54262383486177004}
+  - 114: {fileID: 114507270088078522}
+  - 114: {fileID: 114878502913461316}
+  - 114: {fileID: 114340754367091106}
+  - 65: {fileID: 65517788059089176}
+  - 195: {fileID: 195174129552026224}
+  - 114: {fileID: 114856001117717204}
+  - 114: {fileID: 114858576383157626}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1444897590045794
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 4251801473341128}
-  - component: {fileID: 137554847771652482}
+  - 4: {fileID: 4251801473341128}
+  - 137: {fileID: 137554847771652482}
   m_Layer: 0
-  m_Name: Slime
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1488505081450348
 GameObject:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 4908662706665192}
+  - 4: {fileID: 4908662706665192}
   m_Layer: 0
-  m_Name: Texture Group
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1999871704253236
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
+  serializedVersion: 4
   m_Component:
-  - component: {fileID: 4723694257109278}
-  - component: {fileID: 95822717845704714}
+  - 4: {fileID: 4723694257109278}
+  - 95: {fileID: 95822717845704714}
   m_Layer: 0
-  m_Name: slime_v013_move
+  m_Name: 
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4251801473341128
 Transform:
   m_ObjectHideFlags: 1
@@ -178,14 +178,11 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 1c4b90b7b74533e4a8b4014620de784e, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
+  m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -193,13 +190,11 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!23 &23853726948509716
 MeshRenderer:
@@ -210,14 +205,11 @@ MeshRenderer:
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 406981998f1234442a4f2eb50cfe07e1, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
+  m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -225,13 +217,11 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!33 &33119180446581130
 MeshFilter:
@@ -361,8 +351,7 @@ MonoBehaviour:
   proximityDamageInterval: 1
   victoryPointValueWhenKilled: 50
   hitPoints: 100
-  particlesObject: {fileID: 1374612332721398, guid: 82936feec2e3b4f21b42a4618b162034,
-    type: 2}
+  particlesObject: {fileID: 0, guid: 82936feec2e3b4f21b42a4618b162034, type: 2}
 --- !u!137 &137554847771652482
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -372,7 +361,6 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
@@ -382,9 +370,7 @@ SkinnedMeshRenderer:
   - {fileID: 2100000, guid: 0e8c33277e313a5419357ee686bab9b1, type: 2}
   - {fileID: 2100000, guid: 1c89aeb9373d88447b3ca26ba4d67057, type: 2}
   - {fileID: 2100000, guid: 0e8c33277e313a5419357ee686bab9b1, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
+  m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
@@ -392,18 +378,15 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingLayer: 0
   m_SortingOrder: 0
   serializedVersion: 2
   m_Quality: 0
   m_UpdateWhenOffscreen: 1
-  m_SkinnedMotionVectors: 1
   m_Mesh: {fileID: 4300000, guid: b973f9a4219a22244b7505e328505887, type: 3}
   m_Bones: []
   m_BlendShapeWeights: []
@@ -419,7 +402,6 @@ NavMeshAgent:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1148980470872574}
   m_Enabled: 1
-  m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3.5
   m_Acceleration: 8
