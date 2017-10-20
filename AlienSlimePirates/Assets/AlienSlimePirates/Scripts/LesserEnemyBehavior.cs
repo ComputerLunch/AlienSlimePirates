@@ -36,7 +36,7 @@ public class LesserEnemyBehavior: MonoBehaviour {
 		playerDist = Vector3.Distance (targetPlayer.position, transform.position);
 		coreDist = Vector3.Distance (targetCore.position, transform.position);
 
-		if (playerDist > 25f || coreDist > 25f) {
+		if (playerDist > 15f || coreDist > 15f) {
 			//agent.SetDestination (targetPlayer.position);
 			transform.position = Vector3.MoveTowards (transform.position, targetPlayer.position, step);
 		}
@@ -47,6 +47,7 @@ public class LesserEnemyBehavior: MonoBehaviour {
 			GameObject bullet = Instantiate (enemyBullet, enemyShotSpawn.position, enemyShotSpawn.rotation);
 			enemyBulletRB = bullet.GetComponent<Rigidbody> ();
 			enemyBulletRB.AddForce ((targetCore.position - transform.position).normalized * enemyBulletSpeed);
+			Destroy (bullet, 2f);
 
 		}
 
