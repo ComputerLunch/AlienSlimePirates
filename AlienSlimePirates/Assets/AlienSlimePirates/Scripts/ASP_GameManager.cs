@@ -72,6 +72,16 @@ public class ASP_GameManager : MonoBehaviour
     private List<ASP_ProximityDamage> ProximityDamageObjects;
     [SerializeField]
     private List<ASP_Damageable> ProximityDamageableObjects;
+
+	[SerializeField]
+	private door2 door;
+
+	[SerializeField]
+	private float EndGameResetDelay = 5;
+
+
+	private List<ISpawner> SpawnerObjectsList;
+
     public static ASP_GameManager Instance { get; private set; }
 
     /* 
@@ -97,7 +107,7 @@ public class ASP_GameManager : MonoBehaviour
             // Here we save our singleton instance
             Instance = this;
             // Furthermore we make sure thst the GameManager persists in new scenes
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
     }
 
@@ -109,7 +119,8 @@ public class ASP_GameManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        ResetLevel();
+		ResetGameManagerData();
+
     }
 
     public void IncrementScore(int addToScore)
@@ -118,12 +129,16 @@ public class ASP_GameManager : MonoBehaviour
         if (gameStatus == GameStatus.LevelinProgress)
         {
             currentScore += addToScore;
-            if (gameHUD != null)
+			if (playerHUD != null)
             {
-                gameHUD.SetNewScore(currentScore.ToString());
+				playerHUD.SetNewScore(currentScore.ToString());
             }
         }
     }
+	public void  LightSaberGrabbed(){
+		GameBegin ();
+	}
+
 
     public void GameOver(GameResult result)
     {
@@ -133,7 +148,9 @@ public class ASP_GameManager : MonoBehaviour
             gameResult = result;
             gameStatus = GameStatus.postLevel;
             gameHUD.DisplayFinalResults(gameResult, currentScore.ToString());
-           Time.timeScale = 0;
+          /// Time.timeScale = 0;
+			//print ("GAME OVER");
+			Invoke ("ResetGame", EndGameResetDelay);
         }
 
     }
@@ -164,9 +181,20 @@ public class ASP_GameManager : MonoBehaviour
     public void GameBegin()
     {
         gameStatus = GameStatus.LevelinProgress;
+		door.open ();
+		StartUpSpawnerObjectsList ();
     }
 
+	private void StartUpSpawnerObjectsList(){
+		for(int i = 0;i < SpawnerObjectsList.Count;  i++){
+			
+			SpawnerObjectsList[i].StartSpawning();
+		}
+	}
 
+	public void RegisterSpawner(ISpawner spawner){
+		SpawnerObjectsList.Add (spawner);
+	}
 
     public void RegisterNewProximityDamageObject(ASP_ProximityDamage newObject)
     {
@@ -200,14 +228,22 @@ public class ASP_GameManager : MonoBehaviour
     {
         return ProximityDamageObjects.ToArray();
     }
+	public void ResetGame()
+	{
 
-    private void ResetLevel()
+		SceneManager.LoadScene (SceneManager.GetActiveScene().name);
+	}
+	private void ResetGameManagerData()
     {
         ProximityDamageObjects = new List<ASP_ProximityDamage>();
         ProximityDamageableObjects = new List<ASP_Damageable>();
+		SpawnerObjectsList = new List<ISpawner>();
+		currentScore = 0;
+		totalEnemiesInLevel = 0;
+		gameStatus = GameStatus.preLevel;
     }
 
-
+}
 
 
 
@@ -333,4 +369,4 @@ public class ASP_GameManager : MonoBehaviour
     }
     */
 
-}
+

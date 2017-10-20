@@ -165,6 +165,7 @@ namespace VRTK.GrabAttachMechanics
             return grabbedObjectRigidBody;
         }
 
+
         protected virtual void ForceReleaseGrab()
         {
             if (grabbedObjectScript)

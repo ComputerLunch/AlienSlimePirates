@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: 47c2ff34091273644a0ce79d0c24284c
+timeCreated: 1508526281
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Cable_largeInnerConnecting
+    100002: Cable_largeOuterConnecting
+    100004: Cable_smallInnerConnecting
+    100006: Crow_nest
+    100008: GunRack_group
+    100010: large_Inner_Cable
+    100012: left_Rudder
+    100014: Mast_group
+    100016: Mast_main
+    100018: Mast_rings
+    100020: Mast_top
+    100022: net_group
+    100024: net_HorizontalBar
+    100026: net_VerticalBar
+    100028: net_VerticalRope
+    100030: PirateShip
+    100032: Plank_bottomBack_R
+    100034: Plank_group
+    100036: right_Rudder
+    100038: sail_bottom_L
+    100040: sail_bottom_R
+    100042: sail_group
+    100044: sail_holders
+    100046: sail_holders (2)
+    100048: sail_holders (3)
+    100050: sails_Duplicator
+    100052: Ship_center
+    100054: Ship_mid_L
+    100056: Ship_mid_R
+    100058: Ship_outer_L
+    100060: Ship_outer_R
+    100062: Ship_platforms
+    100064: //RootNode
+    100066: Texture Group
+    100068: Zipline_bottom_L
+    100070: Zipline_bottom_R
+    100072: Zipline_top_L
+    100074: Zipline_top_R
+    100076: Ziplines_group
+    100078: ZipPost_back_L
+    100080: ZipPost_back_R
+    100082: ZipPost_front_L
+    100084: ZipPost_front_R
+    100086: ZipPost_group
+    400000: Cable_largeInnerConnecting
+    400002: Cable_largeOuterConnecting
+    400004: Cable_smallInnerConnecting
+    400006: Crow_nest
+    400008: GunRack_group
+    400010: large_Inner_Cable
+    400012: left_Rudder
+    400014: Mast_group
+    400016: Mast_main
+    400018: Mast_rings
+    400020: Mast_top
+    400022: net_group
+    400024: net_HorizontalBar
+    400026: net_VerticalBar
+    400028: net_VerticalRope
+    400030: PirateShip
+    400032: Plank_bottomBack_R
+    400034: Plank_group
+    400036: right_Rudder
+    400038: sail_bottom_L
+    400040: sail_bottom_R
+    400042: sail_group
+    400044: sail_holders
+    400046: sail_holders (2)
+    400048: sail_holders (3)
+    400050: sails_Duplicator
+    400052: Ship_center
+    400054: Ship_mid_L
+    400056: Ship_mid_R
+    400058: Ship_outer_L
+    400060: Ship_outer_R
+    400062: Ship_platforms
+    400064: //RootNode
+    400066: Texture Group
+    400068: Zipline_bottom_L
+    400070: Zipline_bottom_R
+    400072: Zipline_top_L
+    400074: Zipline_top_R
+    400076: Ziplines_group
+    400078: ZipPost_back_L
+    400080: ZipPost_back_R
+    400082: ZipPost_front_L
+    400084: ZipPost_front_R
+    400086: ZipPost_group
+    2300000: Cable_largeInnerConnecting
+    2300002: Cable_largeOuterConnecting
+    2300004: Cable_smallInnerConnecting
+    2300006: Crow_nest
+    2300008: large_Inner_Cable
+    2300010: left_Rudder
+    2300012: Mast_main
+    2300014: Mast_rings
+    2300016: Mast_top
+    2300018: net_HorizontalBar
+    2300020: net_VerticalBar
+    2300022: net_VerticalRope
+    2300024: Plank_bottomBack_R
+    2300026: right_Rudder
+    2300028: sail_bottom_R
+    2300030: sail_holders
+    2300032: sail_holders (2)
+    2300034: sail_holders (3)
+    2300036: sails_Duplicator
+    2300038: Ship_center
+    2300040: Ship_mid_R
+    2300042: Ship_outer_R
+    2300044: Zipline_bottom_L
+    2300046: Zipline_bottom_R
+    2300048: Zipline_top_L
+    2300050: Zipline_top_R
+    2300052: ZipPost_back_L
+    2300054: ZipPost_back_R
+    2300056: ZipPost_front_L
+    2300058: ZipPost_front_R
+    3300000: Cable_largeInnerConnecting
+    3300002: Cable_largeOuterConnecting
+    3300004: Cable_smallInnerConnecting
+    3300006: Crow_nest
+    3300008: large_Inner_Cable
+    3300010: left_Rudder
+    3300012: Mast_main
+    3300014: Mast_rings
+    3300016: Mast_top
+    3300018: net_HorizontalBar
+    3300020: net_VerticalBar
+    3300022: net_VerticalRope
+    3300024: Plank_bottomBack_R
+    3300026: right_Rudder
+    3300028: sail_bottom_R
+    3300030: sail_holders
+    3300032: sail_holders (2)
+    3300034: sail_holders (3)
+    3300036: sails_Duplicator
+    3300038: Ship_center
+    3300040: Ship_mid_R
+    3300042: Ship_outer_R
+    3300044: Zipline_bottom_L
+    3300046: Zipline_bottom_R
+    3300048: Zipline_top_L
+    3300050: Zipline_top_R
+    3300052: ZipPost_back_L
+    3300054: ZipPost_back_R
+    3300056: ZipPost_front_L
+    3300058: ZipPost_front_R
+    4300000: Cable_smallInnerConnecting
+    4300002: net_HorizontalBar
+    4300004: net_VerticalRope
+    4300006: net_VerticalBar
+    4300008: large_Inner_Cable
+    4300010: Cable_largeOuterConnecting
+    4300012: right_Rudder
+    4300014: left_Rudder
+    4300016: Cable_largeInnerConnecting
+    4300018: sails_Duplicator
+    4300020: sail_holders
+    4300022: sail_holders (2)
+    4300024: sail_holders (3)
+    4300026: sail_bottom_R
+    4300028: Crow_nest
+    4300030: Mast_top
+    4300032: Mast_main
+    4300034: Mast_rings
+    4300036: Ship_outer_R
+    4300038: Ship_mid_R
+    4300040: Ship_center
+    4300042: ZipPost_front_R
+    4300044: ZipPost_back_R
+    4300046: ZipPost_back_L
+    4300048: ZipPost_front_L
+    4300050: Zipline_bottom_R
+    4300052: Zipline_top_R
+    4300054: Zipline_top_L
+    4300056: Zipline_bottom_L
+    4300058: Plank_bottomBack_R
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

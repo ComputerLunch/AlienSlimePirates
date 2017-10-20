@@ -17,6 +17,10 @@ namespace VRTK.GrabAttachMechanics
         [Tooltip("Will respect the grabbed climbing object's rotation if it changes dynamically")]
         public bool useObjectRotation = false;
 
+
+		public void AutoLetGo(){
+			ForceReleaseGrab ();
+		}
         protected override void Initialise()
         {
             tracked = false;

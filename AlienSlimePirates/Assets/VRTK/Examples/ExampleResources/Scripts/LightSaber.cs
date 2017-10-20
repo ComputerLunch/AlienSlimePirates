@@ -36,6 +36,13 @@
 			}
 		}
 
+
+
+		public override void OnInteractableObjectGrabbed(InteractableObjectEventArgs e)
+		{
+			ASP_GameManager.Instance.LightSaberGrabbed();
+			base.OnInteractableObjectGrabbed(e);
+		}
         public override void StopUsing(VRTK_InteractUse usingObject)
         {
             base.StopUsing(usingObject);

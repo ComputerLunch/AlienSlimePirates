@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class ASP_Player_HUD : MonoBehaviour {
-	/*
+
 	[SerializeField]
 	private Text currentScoreLabel;
 	[SerializeField]
-	private Text currentScoreOutput;*/
+	private Text currentScoreOutput;
+
 	[SerializeField]
 	private Image playerDamageImage;
 	[SerializeField]
@@ -60,4 +61,10 @@ public class ASP_Player_HUD : MonoBehaviour {
 		coreDamageImage.transform.localPosition =  new Vector3 (coreDamageImage.transform.localPosition.x,newY, coreDamageImage.transform.localPosition.z);
 
 	}
+
+	public void SetNewScore(string newScore)
+	{
+		currentScoreOutput.text = newScore;
+	}
+
 }

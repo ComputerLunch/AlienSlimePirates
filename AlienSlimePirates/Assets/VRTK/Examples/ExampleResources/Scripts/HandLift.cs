@@ -17,8 +17,12 @@
         private bool isMovingUp = true;
 		private bool isGrabbed = false;
 
+		//added by mdlp
+		private VRTK.GrabAttachMechanics.VRTK_ClimbableGrabAttach grabAttachScript;
+
 		void Start (){
 			startPosition = handle.transform.position;
+			grabAttachScript = GetComponent<VRTK.GrabAttachMechanics.VRTK_ClimbableGrabAttach> ();
 		}
 
         public override void OnInteractableObjectGrabbed(InteractableObjectEventArgs e)
@@ -33,6 +37,8 @@
 		public override void OnInteractableObjectUngrabbed(InteractableObjectEventArgs e)
 		{
 			isGrabbed = false;
+
+			//print("ungrabbing object is " + e.interactingObject);
 			base.OnInteractableObjectUngrabbed(e);
 		}
 
@@ -55,12 +61,17 @@
 				rope.transform.position = midpoint;
 
 				if ((!isMovingUp && handle.transform.position.y <= ropeBottom.position.y) || (isMovingUp && handle.transform.position.y >= handleTop.position.y)) {
+					grabAttachScript.AutoLetGo();
+					//ASP_GameManager.Adjust
 					isMoving = false;
 					isMovingUp = !isMovingUp;
+					isGrabbed = false;
 				} 
 			}
 			else if (isGrabbed == false && isMoving == false)
 			{
+				
+				//OnInteractableObjectUngrabbed ();
 				handle.transform.position = startPosition;
 			}
         }

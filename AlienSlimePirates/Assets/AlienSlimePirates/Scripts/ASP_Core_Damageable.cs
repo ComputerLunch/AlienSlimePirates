@@ -35,7 +35,7 @@ public class ASP_Core_Damageable : ASP_Damageable
             innerCylinder.UpdateValue(0);
             damagePercentText.UpdatePercent(0);
             coreParticles.UpdateValue(0);
-			ASP_GameManager.Instance.PlayerDamaged ((float)damageReceived/(float)hitPoints);
+			ASP_GameManager.Instance.CoreDamaged ((float)damageReceived/(float)hitPoints);
             ASP_GameManager.Instance.GameOver(GameResult.PlayerLossCore);
         }
         else
@@ -44,7 +44,7 @@ public class ASP_Core_Damageable : ASP_Damageable
             innerCylinder.UpdateValue(newPercentage);
             coreParticles.UpdateValue(newPercentage);
             damagePercentText.UpdatePercent(System.Convert.ToInt32(newPercentage * 100));
-			ASP_GameManager.Instance.PlayerDamaged ((float)damageReceived/(float)hitPoints);
+			ASP_GameManager.Instance.CoreDamaged ((float)damageReceived/(float)hitPoints);
         }
     }
 }
