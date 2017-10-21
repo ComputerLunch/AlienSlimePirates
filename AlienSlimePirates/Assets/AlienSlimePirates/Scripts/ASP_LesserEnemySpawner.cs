@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ASP_LesserEnemySpawner : MonoBehaviour {
+public class ASP_LesserEnemySpawner : MonoBehaviour, ISpawner {
 	public  float enemySpawnDelay = 25 ;
 	public  int enemyCount = 0 ;
 	public  int maxEnemy = 10;
@@ -13,10 +13,13 @@ public class ASP_LesserEnemySpawner : MonoBehaviour {
 	void Start () {
 		//enemyCount = 0;
 		//maxEnemy = 10;
-		Invoke ("SpawnEnemy", enemySpawnDelay);
+		//Invoke ("SpawnEnemy", enemySpawnDelay);
 		ASP_GameManager.Instance.RegisterLevelEnemies(maxEnemy);
+		ASP_GameManager.Instance.RegisterSpawner(this);
 	}
-
+	public void StartSpawning () {
+		Invoke ("SpawnEnemy", enemySpawnDelay);
+	}
 	void SpawnEnemy(){
 
 		if (enemyCount < maxEnemy) {

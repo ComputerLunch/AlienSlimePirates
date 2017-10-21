@@ -62,7 +62,7 @@
 
 				if ((!isMovingUp && handle.transform.position.y <= ropeBottom.position.y) || (isMovingUp && handle.transform.position.y >= handleTop.position.y)) {
 					grabAttachScript.AutoLetGo();
-					//ASP_GameManager.Adjust
+					ASP_GameManager.Instance.AdjustPlayerMomentum ();
 					isMoving = false;
 					isMovingUp = !isMovingUp;
 					isGrabbed = false;

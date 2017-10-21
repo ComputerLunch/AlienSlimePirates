@@ -80,6 +80,8 @@ public class ASP_GameManager : MonoBehaviour
 	private float EndGameResetDelay = 5;
 
 
+	private Rigidbody playerRigidBody;
+
 	private List<ISpawner> SpawnerObjectsList;
 
     public static ASP_GameManager Instance { get; private set; }
@@ -123,6 +125,11 @@ public class ASP_GameManager : MonoBehaviour
 
     }
 
+	public void AdjustPlayerMomentum(){
+		ASP_AdjustPlayerPhysics aPP = GameObject.FindGameObjectWithTag("Player").GetComponent<ASP_AdjustPlayerPhysics>() as ASP_AdjustPlayerPhysics;
+		//playerRigidBody.velocity = Vector3.zero;
+		aPP.KillAllPlayerVelocity();
+	}
     public void IncrementScore(int addToScore)
     {
 
@@ -187,7 +194,6 @@ public class ASP_GameManager : MonoBehaviour
 
 	private void StartUpSpawnerObjectsList(){
 		for(int i = 0;i < SpawnerObjectsList.Count;  i++){
-			
 			SpawnerObjectsList[i].StartSpawning();
 		}
 	}
@@ -235,6 +241,8 @@ public class ASP_GameManager : MonoBehaviour
 	}
 	private void ResetGameManagerData()
     {
+
+
         ProximityDamageObjects = new List<ASP_ProximityDamage>();
         ProximityDamageableObjects = new List<ASP_Damageable>();
 		SpawnerObjectsList = new List<ISpawner>();

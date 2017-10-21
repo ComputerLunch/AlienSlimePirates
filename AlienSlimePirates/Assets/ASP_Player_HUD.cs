@@ -54,7 +54,7 @@ public class ASP_Player_HUD : MonoBehaviour {
 
 	public void CoreDamaged(float damagePercent){
 
-		print ("CoreDamaged "+ damagePercent );
+		//print ("CoreDamaged "+ damagePercent );
 		float difference = coreDamage_zero - coreDamage_Max;
 		float newY = coreDamage_zero - difference * damagePercent;
 		//print ("newY " + newY);

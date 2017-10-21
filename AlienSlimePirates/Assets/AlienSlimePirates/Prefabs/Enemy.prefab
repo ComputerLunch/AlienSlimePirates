@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 195174129552026224}
   - component: {fileID: 114856001117717204}
   - component: {fileID: 114858576383157626}
+  - component: {fileID: 114396587011395838}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -305,6 +306,19 @@ MonoBehaviour:
   damageRadius: 1.5
   damageInflicted: 1
   showDamageGizmo: 1
+--- !u!114 &114396587011395838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1148980470872574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12908695364124849b9f69e9ef059e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageSoundEffect: {fileID: 0}
+  damageInflicted: 10
 --- !u!114 &114507270088078522
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -331,6 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12908695364124849b9f69e9ef059e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageSoundEffect: {fileID: 0}
   damageInflicted: 20
 --- !u!114 &114858576383157626
 MonoBehaviour:
