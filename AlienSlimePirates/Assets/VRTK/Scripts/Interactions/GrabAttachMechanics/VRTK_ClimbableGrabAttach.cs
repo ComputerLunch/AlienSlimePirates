@@ -19,6 +19,7 @@ namespace VRTK.GrabAttachMechanics
 
 
 		public void AutoLetGo(){
+			//StopGrab(false);
 			ForceReleaseGrab ();
 		}
         protected override void Initialise()

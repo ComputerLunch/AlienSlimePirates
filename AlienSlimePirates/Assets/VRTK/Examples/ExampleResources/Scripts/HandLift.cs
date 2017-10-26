@@ -61,11 +61,17 @@
 				rope.transform.position = midpoint;
 
 				if ((!isMovingUp && handle.transform.position.y <= ropeBottom.position.y) || (isMovingUp && handle.transform.position.y >= handleTop.position.y)) {
-					grabAttachScript.AutoLetGo();
+					
+					
+				
 					ASP_GameManager.Instance.AdjustPlayerMomentum ();
 					isMoving = false;
 					isMovingUp = !isMovingUp;
 					isGrabbed = false;
+				
+					 StopUsing();
+
+					grabAttachScript.AutoLetGo();
 				} 
 			}
 			else if (isGrabbed == false && isMoving == false)

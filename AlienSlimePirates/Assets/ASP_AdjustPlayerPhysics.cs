@@ -14,7 +14,9 @@ public class ASP_AdjustPlayerPhysics : MonoBehaviour {
 	private float startTime = 0;
 	// Use this for initialization
 	public void KillAllPlayerVelocity () {
+		//print ("*** KillAllPlayerVelocity***");
 		killAllVelocityFlag = 2;
+		softLandingFlag = false;
 	}
 	
 	// Update is called once per frame
@@ -37,6 +39,8 @@ public class ASP_AdjustPlayerPhysics : MonoBehaviour {
 			transform.position = Vector3.Lerp (startPosition, LiftLandingTarget.position, t);
 
 			if (t >= 1) {
+
+				//print ("*** Kill flag***");
 				softLandingFlag = false;
 			}
 		}
