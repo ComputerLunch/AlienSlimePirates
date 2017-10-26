@@ -120,8 +120,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1148980470872574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.930062, y: 3.0307376, z: -24.96986}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 6.893384, y: 2.189, z: -6.870468}
+  m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children:
   - {fileID: 4723694257109278}
   m_Father: {fileID: 0}
@@ -281,7 +281,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1999871704253236}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: b973f9a4219a22244b7505e328505887, type: 3}
   m_Controller: {fileID: 9100000, guid: cd59d778c9cec2142bbc0a1ad66f554c, type: 2}
   m_CullingMode: 1
@@ -383,9 +383,9 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 97cbe0b5cd5e86a449f3e50172c2b5a9, type: 2}
+  - {fileID: 2100000, guid: f6ebbdf28368c174abcd2d29a57b7848, type: 2}
   - {fileID: 2100000, guid: f042beebc2e01764f9b99702a1699d1a, type: 2}
-  - {fileID: 2100000, guid: 1c89aeb9373d88447b3ca26ba4d67057, type: 2}
+  - {fileID: 2100000, guid: f327f5b75f36a0d469dfa08dad5e5838, type: 2}
   - {fileID: 2100000, guid: 0e8c33277e313a5419357ee686bab9b1, type: 2}
   - {fileID: 2100000, guid: 1c89aeb9373d88447b3ca26ba4d67057, type: 2}
   - {fileID: 2100000, guid: 0e8c33277e313a5419357ee686bab9b1, type: 2}
