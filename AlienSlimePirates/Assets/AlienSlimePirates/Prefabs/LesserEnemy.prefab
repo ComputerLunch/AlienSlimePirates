@@ -383,7 +383,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f6ebbdf28368c174abcd2d29a57b7848, type: 2}
+  - {fileID: 2100000, guid: 4fd3d703d43deab43bb7ec142ca3f358, type: 2}
   - {fileID: 2100000, guid: f042beebc2e01764f9b99702a1699d1a, type: 2}
   - {fileID: 2100000, guid: f327f5b75f36a0d469dfa08dad5e5838, type: 2}
   - {fileID: 2100000, guid: 0e8c33277e313a5419357ee686bab9b1, type: 2}

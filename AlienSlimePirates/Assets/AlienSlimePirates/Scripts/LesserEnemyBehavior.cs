@@ -44,6 +44,8 @@ public class LesserEnemyBehavior: MonoBehaviour {
 		if (Time.time > enemyNextFire) {
 
 			enemyNextFire = Time.time + enemyFireRate;
+
+			//Quaternion shotDirection = Quaternion.LookRotation()
 			GameObject bullet = Instantiate (enemyBullet, enemyShotSpawn.position, enemyShotSpawn.rotation);
 			enemyBulletRB = bullet.GetComponent<Rigidbody> ();
 			enemyBulletRB.AddForce ((targetCore.position - transform.position).normalized * enemyBulletSpeed);
