@@ -281,7 +281,7 @@ Animator:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1999871704253236}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: b973f9a4219a22244b7505e328505887, type: 3}
   m_Controller: {fileID: 9100000, guid: cd59d778c9cec2142bbc0a1ad66f554c, type: 2}
   m_CullingMode: 1
@@ -304,13 +304,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCore: {fileID: 0}
   targetPlayer: {fileID: 0}
-  speed: 2
-  enemyBullet: {fileID: 1397877013374262, guid: 6e10801507ed4af49b2067061e92512a,
+  speed: 0.5
+  enemyBullet: {fileID: 1325211143562788, guid: 1a03851892036584ea051f7a6c7fe735,
     type: 2}
-  enemyBulletRB: {fileID: 54665422708780578, guid: 6e10801507ed4af49b2067061e92512a,
+  enemyBulletRB: {fileID: 54575808739638960, guid: 1a03851892036584ea051f7a6c7fe735,
     type: 2}
   enemyShotSpawn: {fileID: 4460231483627884}
-  enemyFireRate: 2
+  enemyFireRate: 1
   enemyBulletSpeed: 4000
 --- !u!114 &114340754367091106
 MonoBehaviour:
@@ -368,7 +368,7 @@ MonoBehaviour:
   proximityDamageInterval: 1
   victoryPointValueWhenKilled: 50
   hitPoints: 100
-  particlesObject: {fileID: 1374612332721398, guid: 82936feec2e3b4f21b42a4618b162034,
+  particlesObject: {fileID: 1054976030423076, guid: 080730a346f422743914f01c5c7b19c5,
     type: 2}
 --- !u!137 &137554847771652482
 SkinnedMeshRenderer:

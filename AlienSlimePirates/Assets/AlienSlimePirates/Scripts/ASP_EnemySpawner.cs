@@ -27,7 +27,7 @@ public class ASP_EnemySpawner : MonoBehaviour, ISpawner {
 		if (enemyCount < maxEnemy) {
 			Instantiate (enemySlime, gameObject.transform.position, Quaternion.identity);
 			enemyCount++;
-			Invoke ("SpawnEnemy", Random.Range(1f,5f));
+			Invoke ("SpawnEnemy", Random.Range(10f,25f));
 		}
 	}
 

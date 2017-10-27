@@ -121,7 +121,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1148980470872574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.807656, y: 1.2175, z: -3.8614736}
+  m_LocalPosition: {x: -3.8317811, y: 0.71750003, z: -8.475269}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4723694257109278}
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetCore: {fileID: 0}
   targetPlayer: {fileID: 0}
-  playerDist: 0
+  playerDist: 0.1
   speed: 1
 --- !u!114 &114856001117717204
 MonoBehaviour:
@@ -376,7 +376,7 @@ MonoBehaviour:
   proximityDamageInterval: 1
   victoryPointValueWhenKilled: 50
   hitPoints: 100
-  particlesObject: {fileID: 1374612332721398, guid: 82936feec2e3b4f21b42a4618b162034,
+  particlesObject: {fileID: 1656910723008422, guid: 105ed19c489a581488a8e5e1afc8002a,
     type: 2}
 --- !u!137 &137554847771652482
 SkinnedMeshRenderer:
@@ -436,7 +436,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
