@@ -1,10 +1,12 @@
 fileFormatVersion: 2
 guid: 16f1d6998ab7687489352cab72638e86
-timeCreated: 1508975161
-licenseType: Pro
+timeCreated: 1509142366
+licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - SplatEffect: {instanceID: 0}
+  - bulletSoundEffect: {fileID: 8300000, guid: 1b3ace21b0d53594ab53bc8427988423, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
