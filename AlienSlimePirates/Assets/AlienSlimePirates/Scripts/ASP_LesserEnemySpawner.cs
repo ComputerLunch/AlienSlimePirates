@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ASP_LesserEnemySpawner : MonoBehaviour, ISpawner {
-	public  float enemySpawnDelay = 25 ;
+	public  float enemySpawnDelay = 55 ;
 	public  int enemyCount = 0 ;
 	public  int maxEnemy = 10;
 	public GameObject enemySlime;
@@ -25,7 +25,7 @@ public class ASP_LesserEnemySpawner : MonoBehaviour, ISpawner {
 		if (enemyCount < maxEnemy) {
 			Instantiate (enemySlime, gameObject.transform.position, Quaternion.identity);
 			enemyCount++;
-			Invoke ("SpawnEnemy", Random.Range(10f,25f));
+			Invoke ("SpawnEnemy", Random.Range(30f,60f));
 		}
 	}
 

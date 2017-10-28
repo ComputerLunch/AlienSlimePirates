@@ -14,7 +14,7 @@ public class LesserEnemyBehavior: MonoBehaviour {
 	public Transform enemyShotSpawn;
 	public float enemyFireRate;
 	public float enemyBulletSpeed;
-
+	public float shootDistanceDelta = 4;
 	private float playerDist;
 	private float coreDist;
 	private float enemyNextFire;
@@ -43,12 +43,22 @@ public class LesserEnemyBehavior: MonoBehaviour {
 
 		if (Time.time > enemyNextFire) {
 
+			float distanceToPlayer = (targetPlayer.position - transform.position).magnitude +  Random.Range(0, shootDistanceDelta);
+			float distanceToCore = (targetCore.position - transform.position).magnitude +  Random.Range(0, shootDistanceDelta);
 			enemyNextFire = Time.time + enemyFireRate;
 
-			Quaternion shotDirection = Quaternion.LookRotation((targetCore.position - transform.position).normalized, Vector3.up);
+			Transform  targetTransform;
+			if (distanceToPlayer < distanceToCore)
+			{
+				targetTransform = targetPlayer;
+			} else {
+					targetTransform = targetCore;
+			}
+
+			Quaternion shotDirection = Quaternion.LookRotation((targetTransform.position - transform.position).normalized, Vector3.up);
 			GameObject bullet = Instantiate (enemyBullet, enemyShotSpawn.position, shotDirection);
 			enemyBulletRB = bullet.GetComponent<Rigidbody> ();
-			enemyBulletRB.AddForce ((targetCore.position - transform.position).normalized * enemyBulletSpeed);
+			enemyBulletRB.AddForce ((targetTransform.position - transform.position).normalized * enemyBulletSpeed);
 			//Destroy (bullet, 2f);
 
 		}

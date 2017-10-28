@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.PostProcessing;
 /* 
 [System.Serializable]
 public struct SceneLoadInfo
@@ -79,6 +79,9 @@ public class ASP_GameManager : MonoBehaviour
 	[SerializeField]
 	private float EndGameResetDelay = 5;
 
+	
+	[SerializeField]
+	private PostProcessingProfile postProcProf;
 
 	private Rigidbody playerRigidBody;
 
@@ -124,6 +127,10 @@ public class ASP_GameManager : MonoBehaviour
 		ResetGameManagerData();
 
     }
+	private void Start()
+	{
+			postProcProf.vignette.enabled = false;
+	}
 
 	public void AdjustPlayerMomentum(){
 		ASP_AdjustPlayerPhysics aPP = GameObject.FindGameObjectWithTag("Player").GetComponent<ASP_AdjustPlayerPhysics>() as ASP_AdjustPlayerPhysics;
@@ -155,23 +162,39 @@ public class ASP_GameManager : MonoBehaviour
             gameResult = result;
             gameStatus = GameStatus.postLevel;
             gameHUD.DisplayFinalResults(gameResult, currentScore.ToString());
-          /// Time.timeScale = 0;
-			//print ("GAME OVER");
+         if (gameResult != GameResult.PlayerWin)
+			{
+				postProcProf.vignette.enabled = true;
+			
+			} else
+			{
+				postProcProf.vignette.enabled = false;
+			}
 			Invoke ("ResetGame", EndGameResetDelay);
         }
 
     }
+	void killVignetteEffect(){
+		postProcProf.vignette.enabled = false;
+	}
 
 
 	public void CoreDamaged(float damagePercent)
-	{
+	{	 if (gameStatus == GameStatus.LevelinProgress)
+        {
 		//print ("PlayerDamaged " + damagePercent);
 		playerHUD.CoreDamaged(damagePercent);
+		}
 	}
 	public void PlayerDamaged(float damagePercent)
 	{
+		 if (gameStatus == GameStatus.LevelinProgress)
+        {
+		postProcProf.vignette.enabled = true;
+			Invoke ("killVignetteEffect", 0.2f);
 		//print ("PlayerDamaged " + damagePercent);
 		playerHUD.PlayerDamaged(damagePercent);
+		}
 	}
     public void RegisterLevelEnemies(int newEnemies)
     {

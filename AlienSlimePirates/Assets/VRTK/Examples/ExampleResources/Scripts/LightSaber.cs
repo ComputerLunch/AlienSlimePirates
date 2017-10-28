@@ -10,6 +10,8 @@
         private float beamExtendSpeed = 0;
 
         private GameObject blade;
+
+		 public ParticleSystem bladeParticles;
         private Color activeColor;
         private Color targetColor;
         private Color[] bladePhaseColors;
@@ -67,7 +69,13 @@
         private void SetBeamSize()
         {
             blade.transform.localScale = new Vector3(1f, currentBeamSize, 1f);
-            beamActive = (currentBeamSize >= beamLimits.y ? true : false);
+
+			        ParticleSystem.MainModule myModule = bladeParticles.main;
+
+						 myModule.startLifetime =  currentBeamSize/beamLimits.y * 0.38f;
+
+			            beamActive = (currentBeamSize >= beamLimits.y ? true : false);
+			
         }
 
         private void PulseBeam()

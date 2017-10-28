@@ -310,8 +310,9 @@ MonoBehaviour:
   enemyBulletRB: {fileID: 54575808739638960, guid: 1a03851892036584ea051f7a6c7fe735,
     type: 2}
   enemyShotSpawn: {fileID: 4460231483627884}
-  enemyFireRate: 1
+  enemyFireRate: 3
   enemyBulletSpeed: 4000
+  shootDistanceDelta: 4
 --- !u!114 &114340754367091106
 MonoBehaviour:
   m_ObjectHideFlags: 1
