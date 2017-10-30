@@ -46,16 +46,18 @@ public class LesserEnemyBehavior: MonoBehaviour {
 			float distanceToPlayer = (targetPlayer.position - transform.position).magnitude +  Random.Range(0, shootDistanceDelta);
 			float distanceToCore = (targetCore.position - transform.position).magnitude +  Random.Range(0, shootDistanceDelta);
 			enemyNextFire = Time.time + enemyFireRate;
-
+			Quaternion shotDirection;
 			Transform  targetTransform;
 			if (distanceToPlayer < distanceToCore)
 			{
 				targetTransform = targetPlayer;
+				shotDirection = Quaternion.LookRotation(((targetTransform.position +  new Vector3(0, 1.5f,0) )- transform.position).normalized , Vector3.up);
 			} else {
 					targetTransform = targetCore;
+				 shotDirection = Quaternion.LookRotation((targetTransform.position - transform.position).normalized, Vector3.up);
 			}
 
-			Quaternion shotDirection = Quaternion.LookRotation((targetTransform.position - transform.position).normalized, Vector3.up);
+		
 			GameObject bullet = Instantiate (enemyBullet, enemyShotSpawn.position, shotDirection);
 			enemyBulletRB = bullet.GetComponent<Rigidbody> ();
 			enemyBulletRB.AddForce ((targetTransform.position - transform.position).normalized * enemyBulletSpeed);
